@@ -70,9 +70,9 @@ After `confirm_framework`, do NOT pause between steps.
 
 ```
 research_phase2(draft_id, model='pro')
-  → Server starts a Tavily deep-research job covering all narrative
+  → Server starts a deep-research job covering all narrative
     pillars and every leaf's falsification metric in one shot.
-    Returns immediately with a tavily_request_id and poll_after_seconds.
+    Returns immediately with a research_request_id and poll_after_seconds.
 
 research_phase2_status(draft_id) every 30-60 seconds until
   status='ingested'. Typical total time 60-180 seconds for 'pro' model.
